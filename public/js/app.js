@@ -1,5 +1,7 @@
 const messageOne=document.querySelector("#message-1")
 const messageTwo=document.querySelector("#message-2")
+const messageThree=document.querySelector("#message-3")
+const messageFour=document.querySelector("#message-4")
 
 
 //messageOne.textContent='From JavaScript'
@@ -19,11 +21,9 @@ weatherForm.addEventListener('submit',(e)=>{
         messageOne.textContent=data.error
         else {
             messageOne.textContent=data.location
-        console.log(data.forecastData)
-        messageTwo.textContent =data.forecastData.current_temperature
+            messageTwo.textContent = data.forecastData
     }
     })
 })
 
 })
-   
